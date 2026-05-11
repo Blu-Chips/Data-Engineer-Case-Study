@@ -1,0 +1,13 @@
+checked_at_utc,check_name,status,severity,failed_rows,details
+2026-05-10T19:14:20+00:00,uniqueness_loan_reporting_date,PASS,critical,0,Each loan should appear once per reporting snapshot.
+2026-05-10T19:14:20+00:00,critical_null_LOAN_ID,PASS,critical,0,`LOAN_ID` must be fully populated.
+2026-05-10T19:14:20+00:00,critical_null_reporting_date,PASS,critical,0,`reporting_date` must be fully populated.
+2026-05-10T19:14:20+00:00,critical_null_BALANCE,PASS,critical,0,`BALANCE` must be fully populated.
+2026-05-10T19:14:20+00:00,age_range_18_120,PASS,warning,0,Non-null ages should be between 18 and 120.
+2026-05-10T19:14:20+00:00,income_non_negative,PASS,warning,0,Income values should be non-negative.
+2026-05-10T19:14:20+00:00,important_null_threshold_DoB,WARN,warning,43681,`DoB` null percentage is 61.14%; threshold is 20%.
+2026-05-10T19:14:20+00:00,important_null_threshold_Income Level,WARN,warning,45286,`Income Level` null percentage is 63.38%; threshold is 20%.
+2026-05-10T19:14:20+00:00,important_null_threshold_ARREARS,PASS,warning,0,`ARREARS` null percentage is 0.00%; threshold is 20%.
+2026-05-10T19:14:20+00:00,record_count_reconciliation,PASS,critical,0,"Analytics rows (71,448) should match cleaned credit rows (71,448)."
+2026-05-10T19:14:20+00:00,referential_integrity_credit_to_sales,PASS,warning,0,Credit-to-sales match rate is 100.00%; case-study target is 95%.
+2026-05-10T19:14:20+00:00,freshness_latest_snapshot,PASS,critical,0,Latest reporting date is 2025-12-30; expected at least 2025-12-30.

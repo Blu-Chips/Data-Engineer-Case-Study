@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Keep raw case-study/customer source files local unless explicitly approved.
+#Credit Data/
+#SourceData/
+#*.zip
+#*.xlsx
+
+# Local working artifacts that can be regenerated.
+.kiro/
